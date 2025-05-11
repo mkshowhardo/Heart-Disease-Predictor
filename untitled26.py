@@ -177,6 +177,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
+pip install joblib
+
 model = joblib.load('heart_disease_model.pkl')
 
 st.title("Heart Disease Predictor")
@@ -194,5 +196,4 @@ if st.button("Predict"):
     pred = model.predict(X_new)
     st.success("Heart Disease Risk: " + ("Yes" if pred[0] == 1 else "No"))
 
-streamlit run app.py
 
