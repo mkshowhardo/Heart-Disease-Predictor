@@ -31,3 +31,18 @@ Predict the risk of **heart disease** using patient medical data with machine le
 ```bash
 git clone <your-repo-link>
 cd heart-disease-prediction
+
+pip install -r requirements.txt
+
+
+streamlit run app.py
+
+heart-disease-prediction/
+│
+├── heart.csv                 # Dataset
+├── HeartDisease.ipynb        # EDA & Model Training
+├── app.py                    # Streamlit Deployment
+├── heart_disease_model.pkl   # Saved Best Model
+├── requirements.txt          # Dependencies
+└── README.md                 # Project Documentation
+
